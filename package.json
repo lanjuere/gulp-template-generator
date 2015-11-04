@@ -1,0 +1,26 @@
+{
+  "name": "gulp_serveur",
+  "version": "1.0.0",
+  "description": "gulp project for dev environnement",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "lanjuere",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.4.2",
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "^3.29.0"
+  }
+}
