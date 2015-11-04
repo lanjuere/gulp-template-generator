@@ -19,9 +19,9 @@ require('./tasks/Libs').createTask(options);
 require('./tasks/Lint').createTask(options);
 require('./tasks/Sass').createTask(options);
 require('./tasks/Scripts').createTask(options);
-require('./tasks/Watch').createTask(options);
 require('./tasks/Browserify').createTask(options);
+require('./tasks/Watch').createTask(options);
 
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'libs', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'libs', 'browserify', 'watch']);
