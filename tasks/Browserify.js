@@ -2,24 +2,33 @@
  * Created by lionel on 01/11/2015.
  */
 
-var browserify = require('gulp-browserify');
+var transform = require('vinyl-transform');
+var browserify = require('browserify');
+
 
 function TaskBrowserify() {
 
     this.createTask = function (options) {
 
+
         gulp.task('browserify', function () {
-            //FIXME Can"t change file name ...
+
+            var browserified = browserify(options.js.src);
+            var bundle = transform(function (filename) {
+                return browserified.bundle();
+            });
+
+
             return gulp.src(options.js.src)
-                .pipe(browserify())
-                //.pipe(rename(fileUtils.createJsNameFile(options.js.name, false)))
-                //.pipe(gulp.dest(options.js.dest))
-                //.pipe(rename(fileUtils.createJsNameFile(options.js.name, false)))
-                //.pipe(uglify())
-                .pipe(gulp.dest(options.js.dest))
-            //.pipe(rename(fileUtils.createJsNameFile(options.js.name, false)))
-            //.pipe(gulp.dest(options.js.dest));
+                .pipe(bundle)
+                .on('error', function (err) {
+                    console.error(err.message);
+                    this.emit('end');
+                })
+                .pipe(gulp.dest(options.js.dest));
+            ;
         });
+
 
     }
 }
