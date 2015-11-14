@@ -2,7 +2,7 @@
   "name": "gulp-template-generator",
   "version": "0.1.0",
   "description": "gulp template generator",
-  "main": "./bin/gulp-server.js",
+  "main": "./bin/gulp-template-generator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,9 +32,7 @@
     "through2": "^2.0.0",
     "win-spawn": "^2.0.0",
     "yargs": "^3.29.0",
-    "ncp": "^2.0.0"
-  },
-  "devDependencies": {
+    "ncp": "^2.0.0",
     "fs": "0.0.2"
   }
 }
