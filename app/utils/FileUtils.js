@@ -2,7 +2,7 @@
  * Created by lionel on 01/11/2015.
  */
 
-function fileNameUtils() {
+function fileUtils() {
 
 
     this.createJsNameFile = function (name, isMin) {
@@ -12,4 +12,4 @@ function fileNameUtils() {
 }
 
 
-module.exports = new fileNameUtils();
+module.exports = new fileUtils();

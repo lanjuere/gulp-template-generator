@@ -8,7 +8,7 @@ global.sass = require('gulp-sass');
 global.concat = require('gulp-concat');
 global.uglify = require('gulp-uglify');
 global.rename = require('gulp-rename');
-global.fileUtils = require('./app/utils/FilesNames');
+global.fileUtils = require('./app/utils/FilesUtils');
 
 //Init options from parameters
 var Options = require('./app/beans/Options');
@@ -24,4 +24,5 @@ require('./app/tasks/Watch').createTask(options);
 
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'libs', 'browserify', 'watch']);
+//gulp.task('default', ['lint', 'sass', 'libs', 'browserify', 'watch']);
+gulp.task('default', ['lint', 'libs', 'browserify', 'watch']);
