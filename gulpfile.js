@@ -8,7 +8,7 @@ global.sass = require('gulp-sass');
 global.concat = require('gulp-concat');
 global.uglify = require('gulp-uglify');
 global.rename = require('gulp-rename');
-global.fileUtils = require('./app/utils/FilesUtils');
+global.fileUtils = require('./app/utils/FileUtils');
 
 //Init options from parameters
 var Options = require('./app/beans/Options');
