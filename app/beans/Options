@@ -1,9 +1,9 @@
 /**
-* Objet permettant de gérer mes paramètres envoyés par l'utilisateur
-**/
+ * Object containing all datas paths
+ **/
 function Options(path, name) {
 
-    var default_name = "gulp.json";
+    var default_name = "gulp_settings.json";
     var separator = "/";
 
     var parameters = {
@@ -27,7 +27,6 @@ function Options(path, name) {
         } else {
             var file_name = name ? name : default_name;
             self.clone(require(path + separator + file_name), this);
-
             self.addPath(['lib', 'src', 'dest'], path);
         }
     };
