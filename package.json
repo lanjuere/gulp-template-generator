@@ -10,7 +10,7 @@
     "gulp"
   ],
   "bin": {
-    "gulp-server": "./bin/GulpServer.js"
+    "gulp-server": "./bin/gulp-server.js"
   },
   "author": "lanjuere",
   "license": "ISC",
