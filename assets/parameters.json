@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Project name ?",
+    "description": "The name is what your thing is called.",
+    "label": "project_name",
+    "default": null,
+    "require": true
+  },
+  {
+    "title": "author ?",
+    "description": "Author of your project",
+    "label": "author",
+    "default": "unknown",
+    "require": false
+  },
+  {
+    "title": "license ?",
+    "description": "You should specify a license for your package so that people know how they are permitted to use it, and any restrictions you're placing on it.",
+    "label": "license",
+    "default": "ISC",
+    "require": false
+  },
+  {
+    "title": "Is a private project ?",
+    "description": "If you set 'private': true in your package.json, then npm will refuse to publish it.",
+    "label": "private",
+    "default": false,
+    "require": false
+  }
+]

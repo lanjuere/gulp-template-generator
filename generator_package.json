@@ -1,7 +1,7 @@
 {
-  "name": "gulp-template-generator",
+  "name": "{{project_name}}",
   "version": "0.1.0",
-  "description": "gulp template generator",
+  "description": "gulp server",
   "main": "./bin/gulp-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,11 +13,11 @@
     "node": ">= 0.12"
   },
   "bin": {
-    "gulp-template-generator": "./bin/gulp-template-generator.js"
+    "gulp-server": "./bin/gulp-server.js"
   },
-  "author": "lanjuere",
-  "license": "ISC",
-  "private": true,
+  "author": "{{author}}",
+  "license": "{{license}}",
+  "private": "{{private}}",
   "dependencies": {
     "browserify": "^9.0.4",
     "gulp": "^3.9.0",
@@ -31,10 +31,6 @@
     "stripify": "^3.0.0",
     "through2": "^2.0.0",
     "win-spawn": "^2.0.0",
-    "yargs": "^3.29.0",
-    "ncp": "^2.0.0"
-  },
-  "devDependencies": {
-    "fs": "0.0.2"
+    "yargs": "^3.29.0"
   }
 }
