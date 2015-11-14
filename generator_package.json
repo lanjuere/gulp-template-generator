@@ -13,7 +13,7 @@
     "node": ">= 0.12"
   },
   "bin": {
-    "gulp-server": "./bin/gulp-server.js"
+    "{{project_name}}": "./bin/gulp-server.js"
   },
   "author": "{{author}}",
   "license": "{{license}}",
