@@ -8,19 +8,19 @@ global.sass = require('gulp-sass');
 global.concat = require('gulp-concat');
 global.uglify = require('gulp-uglify');
 global.rename = require('gulp-rename');
-global.fileUtils = require('./utils/FilesNames');
+global.fileUtils = require('./app/utils/FilesNames');
 
 //Init options from parameters
-var Options = require('./beans/Options');
+var Options = require('./app/beans/Options');
 var options = new Options(argv.path);
 
 //create tasks
-require('./tasks/Libs').createTask(options);
-require('./tasks/Lint').createTask(options);
-require('./tasks/Sass').createTask(options);
-require('./tasks/Scripts').createTask(options);
-require('./tasks/Browserify').createTask(options);
-require('./tasks/Watch').createTask(options);
+require('./app/tasks/Libs').createTask(options);
+require('./app/tasks/Lint').createTask(options);
+require('./app/tasks/Sass').createTask(options);
+require('./app/tasks/Scripts').createTask(options);
+require('./app/tasks/Browserify').createTask(options);
+require('./app/tasks/Watch').createTask(options);
 
 
 // Default Task
