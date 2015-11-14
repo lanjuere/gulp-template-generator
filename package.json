@@ -1,14 +1,17 @@
 {
-  "name": "gulp_server",
-  "version": "1.0.0",
-  "description": "gulp project for dev environnement",
-  "main": "app.js",
+  "name": "gulp-template-generator",
+  "version": "0.1.0",
+  "description": "gulp template generator",
+  "main": "./bin/gulp-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "gulp"
   ],
+  "engines": {
+    "node": ">= 0.12"
+  },
   "bin": {
     "gulp-server": "./bin/gulp-server.js"
   },
