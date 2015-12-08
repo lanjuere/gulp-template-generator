@@ -10,7 +10,7 @@ function TaskWatch() {
 
         // Watch Files For Changes
         gulp.task('watch', function () {
-            gulp.watch(options.js.src, ['lint', 'browserify']);
+            gulp.watch(options.js.dir, ['lint', 'browserify']);
             gulp.watch('scss/*.scss', ['sass']);
         });
     }

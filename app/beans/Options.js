@@ -11,8 +11,11 @@ function Options(path, name) {
         src: "",
         dest: "",
         libName: "",
-        name: ""
+        name: "",
+        dir: ""
     };
+    //parameters who need the complet path of project
+    var dir_parameters = ['lib', 'src', 'dest', 'dir'];
 
     this.js = {};
     this.css = {};
@@ -27,7 +30,7 @@ function Options(path, name) {
         } else {
             var file_name = name ? name : default_name;
             self.clone(require(path + separator + file_name), this);
-            self.addPath(['lib', 'src', 'dest'], path);
+            self.addPath(dir_parameters, path);
         }
     };
 
